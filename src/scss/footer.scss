@@ -1,0 +1,49 @@
+.footer{
+  height: 435px;
+  display: flex;
+  align-items: center;
+  background-color: $primewhite;
+  &__title{
+    @include font(700, 18px, 22px);
+    margin-bottom: 30px;
+    color: $primeblack;
+  }
+  &__text{
+    @include font(400, 12px, 150%);
+    color: $primeblack;
+    width: 200px;
+  }
+  &__menu li{
+    @include font(400, 12px, 160%);
+    text-transform: capitalize;
+    list-style-type: none;
+  }
+  &__link{
+    @include font(400, 12px, 14px);
+    color: $primeblack;
+    text-decoration: none;
+    display: block;
+    &-2{
+      margin: 10px 0;
+    }
+  }
+  &__links{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    &-icon{
+      color: $primeblack;
+      transition: .5s;
+      &:hover{
+        color: $primered;
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__copy{
+    @include font(400, 12px, 14px);
+    color: $primeblack;
+    margin-top: 140px;
+  }
+
+}

@@ -1,0 +1,54 @@
+.contact {
+  &__content {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 70px;
+    &-title{
+      @include font(600, 36px, 43px);
+      margin-top: -150px;
+    }
+    &-text{
+      @include font(400, 14px, 140%);
+      width: 430px;
+    }
+  }
+
+  &__form {
+
+&-btn{
+  @include font(400, 14px, 17px);
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1.5px solid $primered;
+  background-color: $primered;
+  border-radius: 6px;
+  padding: 17px 34px;
+  cursor: pointer;
+  transition: .5s;
+  &:hover{
+    background-color: #ffffff;
+    color: $primered;
+  }
+}
+    &-input {
+      padding: 20px 30px;
+      border: 1px solid #333333;
+      border-radius: 6px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .text,
+    .text2{
+      width: 47%;
+    }
+    .text2{
+      margin-left: 5%;
+
+    }
+
+  }
+
+}

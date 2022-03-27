@@ -1,0 +1,416 @@
+@media screen and(max-width: 1280px) {
+  .header {
+    padding: 20px 75px;
+  }
+
+}
+
+@media screen and(max-width: 1170px) {
+  .container {
+    max-width: 960px;
+  }
+  .features__content-img {
+    width: 100%;
+  }
+  .features__card {
+    width: 80%;
+    padding: 15px;
+    row-gap: 10px;
+  }
+
+}
+
+@media screen and(max-width: 1100px) {
+
+  .hero {
+    height: 500px;
+    row-gap: 20px;
+
+    &__title {
+      font-size: 66px;
+      line-height: 80px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 145%;
+    }
+  }
+
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    left: 75px;
+    top: 70px;
+    z-index: 6;
+  }
+  .show-mobile-btn span {
+    background: transparent;
+  }
+  .show-mobile-btn span::before,
+  .show-mobile-btn span::after {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .show-mobile-btn span::before {
+    transform: rotate(45deg);
+  }
+  .show-mobile-btn span::after {
+    transform: rotate(-45deg)
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(237, 76, 92, 0.8);
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    transition: .7s;
+  }
+  .show-menu {
+    right: 0;
+  }
+  .show-link {
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    width: 170px;
+    padding: 15px 0;
+    text-align: center;
+  }
+}
+
+@media screen and(max-width: 1100px) {
+  .container {
+    max-width: 720px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 50%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+
+  .mobile-btn {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+  }
+  .dd-selected-image {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .dd-options {
+    width: 100px !important;
+  }
+  .dd-container {
+    top: 20px;
+    right: -27px;
+  }
+  .dd-pointer {
+    right: 38px !important;
+  }
+  .header {
+    padding: 0;
+
+    &__logo {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+    }
+
+    &__form {
+      &-btn {
+        padding: 7px 21px;
+        font-size: 12px;
+        line-height: 15px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+      }
+
+    }
+  }
+  h2 {
+    font-size: 30px !important;
+    line-height: 37px !important;
+  }
+  .hero {
+    height: 380px;
+    row-gap: 15px;
+
+    &__title {
+      font-size: 60px;
+      line-height: 74px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 125%;
+      width: 350px;
+    }
+
+    &__btn {
+      padding: 10px 45px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  .overview__content {
+
+    height: 400px;
+
+    &-2 {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .features {
+    height: 1540px;
+
+    &__content {
+      margin: 70px auto;
+      width: 60%;
+    }
+
+    &__title {
+      margin-bottom: -100px;
+    }
+  }
+
+  .technology {
+    height: 630px;
+
+    &__content {
+      position: relative;
+      margin-bottom: 90px;
+    }
+
+    &__title {
+      margin-top: 25px;
+    }
+  }
+  .slider__content {
+    height: 330px;
+  }
+  .contact__content {
+    height: 320px;
+
+    &-title {
+      margin-top: -40px;
+    }
+  }
+  .footer {
+    height: 485px;
+
+    &__title {
+      margin-top: 20px;
+    }
+  }
+
+}
+
+@media screen and(max-width: 725px) {
+  .container {
+    max-width: 540px;
+  }
+  .features {
+    height: 1265px;
+  }
+  .hero {
+    height: 316px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and(max-width: 540px) {
+
+  .container {
+    max-width: 450px;
+  }
+
+  h2 {
+    font-size: 22px !important;
+    line-height: 26px !important;
+  }
+
+  .header{
+    height: 69px;
+  }
+  .hero {
+    height: 260px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 32px;
+    }
+
+    &__text {
+      font-size: 11px;
+      line-height: 123%;
+      width: 280px;
+    }
+
+    &__btn {
+      padding: 5px 30px;
+      font-size: 8px;
+      line-height: 12px;
+    }
+  }
+  .overview__content {
+    height: 240px;
+    row-gap: 23px;
+  }
+  .overview__content-text {
+    font-size: 12px;
+    line-height: 138%;
+  }
+  .features {
+    height: 1120px;
+
+    &__card {
+      padding: 10px;
+      row-gap: 7px;
+      height: 135px;
+
+      &-title {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      &-text, &-link {
+        font-size: 10px;
+        line-height: 130%;
+      }
+    }
+  }
+
+  .slider__content {
+    width: 370px;
+
+    &-img {
+      width: 100%;
+    }
+  }
+  .footer__img {
+    width: 100%;
+  }
+}
+
+@media screen and(max-width: 450px) {
+  .container {
+    max-width: 370px;
+  }
+  .features {
+    height: 1000px;
+  }
+  .technology__content-num{
+    font-size: 90px;
+    line-height: 100px;
+  }
+  .technology__box{
+    width: 150px;
+    &-icon{
+      width: 50px;
+    }
+  }
+  .technology__content {
+    margin-bottom: 115px;
+  }
+
+  .slider__content {
+    height: 240px;
+    width: 280px;
+    row-gap: 12px;
+  }
+  .contact__content {
+    height: 260px;
+    row-gap: 20px;
+    &-text{
+      width: 280px;
+    }
+  }
+  .contact__form .text, .contact__form .text2 {
+    width: 100%;
+  }
+  .contact__form .text2 {
+    margin-left: 0;
+  }
+  .contact__form-input {
+    padding: 15px 15px;
+    margin-bottom: 5px;
+  }
+  .contact__form-btn{
+    padding: 10px 20px;
+    font-size: 10px;
+    line-height: 11px;
+  }
+}
+
+@media screen and(max-width: 450px){
+
+  .header__logo{
+    column-gap: 4px;
+    &-title a{
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  .hero {
+    height: 170px;
+    row-gap: 5px;
+  }
+  .hero__title {
+    font-size: 26px;
+    line-height: 18px;
+    margin-top: 73px;
+  }
+
+  .hero__text {
+    font-size: 10px;
+    line-height: 122%;
+    width: 214px;
+  }
+  .overview__content-link{
+   font-size: 12px;
+  }
+  .overview__content-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .features {
+    height: 800px;
+  }
+  .features__title{
+    margin-top: 0;
+  }
+  .features__content {
+    margin: 50px auto;
+  }
+  .features__card {
+    padding: 7px;
+    row-gap: 3px;
+    height: 117px;
+  }
+  .features__card-title {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .footer__text {
+    font-size: 11px;
+    width: 120px;
+  }
+
+}

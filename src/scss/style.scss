@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-6{
+  width: 50%;
+  padding: 0 15px;
+}
+.col-4{
+  width: 33.3%;
+  padding: 0 15px;
+}
+.col-3{
+  width: 25%;
+  padding: 0 15px;
+}
+
+$primered: #ED4C5C;
+$primeblack: #101010;
+$primewhite: #FAFAFA;
+
+@mixin font($fw, $fs, $lh) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+
+
+@import "./header";
+@import "./hero";
+@import "./overview";
+@import "./features";
+@import "./technology";
+@import "./slider";
+@import "./contact";
+@import "./footer";
+@import "./media";

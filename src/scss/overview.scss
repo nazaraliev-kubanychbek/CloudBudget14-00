@@ -1,0 +1,49 @@
+.overview {
+
+  &__content {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+    position: relative;
+
+    &-title {
+      @include font(600, 36px, 43px);
+    }
+
+    &-text {
+      @include font(400, 14px, 140%);
+    }
+
+    &-link {
+      @include font(400, 14px, 140%);
+      color: $primered;
+      text-decoration: none;
+    }
+
+    &-circle {
+      background-color: $primered;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+
+      a{
+        color: #ffffff;
+        transition: .5s;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+
+    }
+  }
+
+}

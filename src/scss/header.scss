@@ -1,0 +1,91 @@
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 160px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(237, 76, 92, 0.8);
+  z-index: 5;
+
+  &__logo {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    &-title a {
+      @include font(700, 18px, 22px);
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    column-gap: 30px;
+
+    &-link {
+      @include font(normal, 14px, 17px);
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+
+    &-btn {
+      padding: 12px 30px;
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 6px;
+      @include font(400, 14px, 17px);
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background-color: transparent;
+      cursor: pointer;
+      transition: .5s;
+
+      &:hover {
+        background-color: #FFFFFF;
+        color: $primered;
+      }
+    }
+  }
+}
+
+
+.mobile-btn {
+  width: 55px;
+  height: 45px;
+  display: none;
+}
+
+.mobile-btn span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.mobile-btn span::before,
+.mobile-btn span::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+}
+
+.mobile-btn span::before {
+  top: -10px;
+}
+
+.mobile-btn span::after {
+  top: 10px;
+}
